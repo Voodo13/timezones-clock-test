@@ -1,0 +1,55 @@
+.pointer-clock {
+  width: 200px;
+  height: 200px;
+  border: 4px solid #2a2a2a;
+  background-color: #ededed;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./clock-mockup.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0px 4px 16px 4px #626262;
+}
+
+.pointer-clock__hand {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  &--hour,
+  &--minute,
+  &--second {
+    border-radius: 50% 50% 4px 4px;
+    background-color: rgb(47, 47, 47);
+    bottom: 0;
+  }
+}
+.pointer-clock__hand--hour {
+  height: 60px;
+  width: 8px;
+}
+
+.pointer-clock__hand--minute {
+  height: 90px;
+  width: 6px;
+}
+.pointer-clock__hand--second {
+  height: 100px;
+  width: 2px;
+  background-color: rgb(142, 0, 0);
+}
+
+.pointer-clock__dot {
+  width: 6px;
+  height: 6px;
+  background-color: #ffefa6;
+  box-shadow: #363636;
+  border-radius: 50%;
+  position: absolute;
+}
